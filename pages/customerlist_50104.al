@@ -26,6 +26,8 @@ page 50104 "Customer List page"
                     ApplicationArea = All;
                 }
                 
+                
+                
             }
         }
         area(Factboxes)
