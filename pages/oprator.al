@@ -54,7 +54,7 @@ page 50116 Operator
                     Sum := Value1 + Value2;
                     Substract := Value1 - Value2;
                     Multiply := Value1 * Value2;
-                    Divide := Value1 / Value2;
+                   // Divide := Value1 / Value2;
                 end;
             }
         }
@@ -68,6 +68,6 @@ page 50116 Operator
         Sum: Integer;
         Substract: Integer;
         Multiply: Integer;
-        Divide: Integer;
+        Divide: Boolean;
 
 }
