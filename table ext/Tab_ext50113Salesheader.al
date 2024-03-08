@@ -1,13 +1,16 @@
-tableextension 50111 "Item Ext" extends "Item"
+tableextension 50113 "sales Header ext" extends "Sales Header"
 {
     fields
     {
         // Add changes to table fields here
-        field(26; "Name of Item"; text[10])
+
+
+        field(36; "Sum"; Code[10])
         {
             DataClassification = ToBeClassified;
+
         }
-        field(27;"NLC";Decimal)
+        field(38;"City"; Text[10])
         {
             DataClassification = ToBeClassified;
         }
@@ -16,7 +19,6 @@ tableextension 50111 "Item Ext" extends "Item"
     keys
     {
         // Add changes to keys here
-
     }
 
     fieldgroups
@@ -27,5 +29,3 @@ tableextension 50111 "Item Ext" extends "Item"
     var
         myInt: Integer;
 }
-
-

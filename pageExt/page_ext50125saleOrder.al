@@ -1,23 +1,22 @@
-pageextension 50122 "Item List ext" extends "Item List"
+pageextension 50125 "Sale Order ext" extends "Sales Order"
 {
     layout
     {
         // Add changes to page layout here
-        addafter(InventoryField)
+        addlast(General)
         {
-            field("NLC"; Rec.NLC)
+            field("Sum";Rec."Sum")
             {
-              ApplicationArea = All;
+            ApplicationArea = All;
             }
         }
-        addafter("No.")
+        addafter("Due Date")
         {
-            field("Name of Item"; Rec."Name of Item")
+            field("City"; Rec.City)
             {
                 ApplicationArea = All;
             }
         }
-        
     }
     
     actions

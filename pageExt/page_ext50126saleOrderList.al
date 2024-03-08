@@ -1,19 +1,18 @@
-pageextension 50121 "Item Card Ext" extends "Item Card"
+pageextension 50126 "sale order list ext" extends "Sales Order List"
 {
     layout
     {
-        addafter(Description)
+        // Add changes to page layout here
+        addafter("Amount Including VAT")
         {
-            field("NLC"; Rec.NLC)
+            field("Sum"; Rec.Sum)
             {
                 ApplicationArea = All;
-                Caption = 'NLC';
             }
-
         }
-        addafter("No.")
+        addbefore("Location Code")
         {
-            field("Name of Item";Rec."Name of Item")
+            field("City"; Rec.City)
             {
                 ApplicationArea = All;
             }
