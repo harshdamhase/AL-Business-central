@@ -3,8 +3,8 @@ page 50116 Operator
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
-   Caption = 'Arithmetic operator';
-    
+    Caption = 'Arithmetic operator';
+
     layout
     {
         area(Content)
@@ -14,32 +14,39 @@ page 50116 Operator
                 field(Value1; Value1)
                 {
                     ApplicationArea = All;
-                    
+
                 }
-                field(Value2;Value2)
-                {
-                    ApplicationArea = All;
-                }
-                field(Sum;Sum)
-                {
-                    ApplicationArea = All;
-                }
-                field(Substract;Substract)
-                {
-                    ApplicationArea = All;
-                }
-                field(Multiply;Multiply)
-                {
-                    ApplicationArea = All;
-                }
-                field(Divide;Divide)
+                field(Value2; Value2)
                 {
                     ApplicationArea = All;
                 }
             }
+            Group(Output)
+            {
+                field(Sum; Sum)
+                {
+                    ApplicationArea = All;
+                }
+                field(Substract; Substract)
+                {
+                    ApplicationArea = All;
+                }
+                field(Multiply; Multiply)
+                {
+                    ApplicationArea = All;
+                }
+                field(Divide; Divide)
+                {
+                    ApplicationArea = All;
+                }
+                // field(Modulus; Modulus)
+                // {
+                //     ApplicationArea = All;
+                // }
+            }
         }
     }
-    
+
     actions
     {
         area(Processing)
@@ -54,12 +61,14 @@ page 50116 Operator
                     Sum := Value1 + Value2;
                     Substract := Value1 - Value2;
                     Multiply := Value1 * Value2;
-                   // Divide := Value1 / Value2;
+                    Divide := Value1 / Value2;
+                 //   Modulus := Value1 
                 end;
             }
+
         }
     }
-    
+
     var
         myInt: Integer;
 
@@ -68,6 +77,8 @@ page 50116 Operator
         Sum: Integer;
         Substract: Integer;
         Multiply: Integer;
-        Divide: Boolean;
+        Divide: Integer;
+
+        // Modulus Integer;
 
 }

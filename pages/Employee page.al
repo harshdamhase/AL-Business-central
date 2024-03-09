@@ -47,7 +47,7 @@ page 50102 Employee
                 {
                     ApplicationArea = All;
                 }
-               
+
             }
             group(add)
             {
@@ -102,7 +102,7 @@ page 50102 Employee
     {
         area(Processing)
         {
-            action(ActionName)
+            action(ClickHere)
             {
                 ApplicationArea = All;
 
