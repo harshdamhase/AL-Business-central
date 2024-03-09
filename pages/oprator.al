@@ -4,21 +4,25 @@ page 50116 Operator
     ApplicationArea = All;
     UsageCategory = Administration;
     Caption = 'Arithmetic operator';
+    Editable = true;
 
     layout
     {
         area(Content)
         {
-            group(general)
+            group(Input)
             {
                 field(Value1; Value1)
                 {
                     ApplicationArea = All;
-
+                      ShowMandatory = true;
+                      Caption = 'Enter Value1 :';
                 }
                 field(Value2; Value2)
                 {
                     ApplicationArea = All;
+                    NotBlank = true;
+                      Caption = 'Enter Value2 :';
                 }
             }
             Group(Output)
@@ -26,23 +30,25 @@ page 50116 Operator
                 field(Sum; Sum)
                 {
                     ApplicationArea = All;
+                    Caption = 'Sum of Values :';
+
                 }
                 field(Substract; Substract)
                 {
                     ApplicationArea = All;
+                    Caption = 'Substraction';
                 }
                 field(Multiply; Multiply)
                 {
                     ApplicationArea = All;
+                    Caption = 'Multiplication';
                 }
                 field(Divide; Divide)
                 {
                     ApplicationArea = All;
+                    Caption = 'Dividation';
                 }
-                // field(Modulus; Modulus)
-                // {
-                //     ApplicationArea = All;
-                // }
+               
             }
         }
     }
@@ -62,7 +68,6 @@ page 50116 Operator
                     Substract := Value1 - Value2;
                     Multiply := Value1 * Value2;
                     Divide := Value1 / Value2;
-                 //   Modulus := Value1 
                 end;
             }
 
@@ -77,8 +82,8 @@ page 50116 Operator
         Sum: Integer;
         Substract: Integer;
         Multiply: Integer;
-        Divide: Integer;
+        Divide: Decimal;
 
-        // Modulus Integer;
+       
 
 }
