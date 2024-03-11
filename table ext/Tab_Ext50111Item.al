@@ -11,6 +11,10 @@ tableextension 50111 "Item Ext" extends "Item"
         {
             DataClassification = ToBeClassified;
         }
+        field(23;"MOP";Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys

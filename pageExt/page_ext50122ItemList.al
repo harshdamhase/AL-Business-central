@@ -17,6 +17,13 @@ pageextension 50122 "Item List ext" extends "Item List"
                 ApplicationArea = All;
             }
         }
+        addbefore("Routing No.")
+        {
+            field("MOP";Rec.MOP)
+            {
+                ApplicationArea = All;
+            }
+        }
         
     }
     

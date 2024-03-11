@@ -7,7 +7,7 @@ table 50120 ItemTable
         field(1; "Item No"; Code[10])
         {
             DataClassification = ToBeClassified;
-
+           
         }
         field(2; "Item name"; Text[10])
         {
@@ -26,6 +26,7 @@ table 50120 ItemTable
         field(5; "Blocked"; Boolean)
         {
             DataClassification = ToBeClassified;
+            
         }
         field(6; "Type"; Option)
         {
@@ -37,7 +38,7 @@ table 50120 ItemTable
         field(7; "Purchasing Code"; code[10])
         {
             DataClassification = ToBeClassified;
-            
+
         }
 
 
@@ -53,6 +54,7 @@ table 50120 ItemTable
         field(10; "Qty. on Sales Order"; Integer)
         {
             DataClassification = ToBeClassified;
+             AutoIncrement = true;
         }
         field(11; "Stockout Warning"; Option)
         {
@@ -85,7 +87,7 @@ table 50120 ItemTable
 
     fieldgroups
     {
-       
+
     }
 
     var
@@ -93,22 +95,21 @@ table 50120 ItemTable
 
     trigger OnInsert()
     begin
-    
+
     end;
 
     trigger OnModify()
     begin
-     
+
     end;
 
     trigger OnDelete()
     begin
-  
+
     end;
 
     trigger OnRename()
     begin
-   
-    end;
 
+    end;
 }
