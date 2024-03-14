@@ -102,3 +102,4 @@ page 50122 "Action Page"
 
         Num1: Integer;
 }
+
