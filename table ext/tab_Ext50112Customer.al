@@ -6,6 +6,11 @@ tableextension 50112 "Customer ext" extends "Customer"
         field(289; "Credit"; Decimal)
         {
             DataClassification = ToBeClassified;
+            
+        }
+        field(290; "Customer ext"; Integer)
+        {
+DataClassification = ToBeClassified;
         }
     }
     

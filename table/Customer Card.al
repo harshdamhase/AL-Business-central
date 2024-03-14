@@ -43,12 +43,67 @@ table 50117 "Customer product table"
         {
             DataClassification = ToBeClassified;
         }
-        field(10;"Profit %";decimal)
+        field(10; "Profit %"; decimal)
         {
             DataClassification = ToBeClassified;
         }
 
-        
+        field(11; "Address"; Text[10])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(12; "country code"; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(13; "City"; Text[10])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(14; "State"; Text[10])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(15; "Post code"; Text[10])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(16; "phone no"; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(17; "email"; Text[10])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(18; "Contact name"; Text[10])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(19;"Registration No"; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(20;"EORI Number"; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(21;"tax liable"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(22;"tax area code";Code[10])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(23; "posting group";Text[10])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(24;"Customer price group";Code[10])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys
