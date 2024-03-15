@@ -24,6 +24,8 @@ pageextension 50126 "sale order list ext" extends "Sales Order List"
         // Add changes to page actions here
     }
 
+  
+
     var
         myInt: Integer;
 }

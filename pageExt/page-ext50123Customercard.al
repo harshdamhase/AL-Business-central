@@ -28,6 +28,7 @@ pageextension 50123 "Customer card ext" extends "Customer Card"
         Modify("Credit Limit (LCY)")
         {
             ShowMandatory = true;
+         
         }
 
     }

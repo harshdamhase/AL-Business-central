@@ -9,12 +9,17 @@ pageextension 50124 "Customer List ext" extends "Customer List"
             {
                 ApplicationArea = All;
             }
+            
+        }
+        modify(Name)
+        {
+            ShowMandatory= true;
         }
     }
 
     actions
     {
-        // Add changes to page actions here
+
     }
 
     var

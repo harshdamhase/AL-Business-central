@@ -60,7 +60,7 @@ page 50122 "Action Page"
                     else
                         Message('num is odd');
 
-                    
+
                 end;
             }
 
@@ -91,7 +91,18 @@ page 50122 "Action Page"
                 RunObject = page "SaleOrder Page";
             }
         }
+
+        area(Creation)
+        {
+            action("new doc")
+            {
+                ApplicationArea = All;
+                RunObject = page "customer product list page";
+                
+            }
+        }
     }
+
 
     var
         myInt: Integer;

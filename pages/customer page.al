@@ -14,54 +14,54 @@ page 50103 "mypage"
                 field("emp name"; Rec."emp name")
                 {
                     ApplicationArea = All;
-    
+
                 }
-                field("emp code";Rec."emp code")
+                field("emp code"; Rec."emp code")
                 {
                     ApplicationArea = All;
                 }
-                field("salary";Rec.salary)
+                field("salary"; Rec.salary)
                 {
                     ApplicationArea = All;
                 }
-                field(City;Rec.City)
+                field(City; Rec.City)
                 {
                     ApplicationArea = All;
                 }
-                field("joining date";Rec."joining date")
+                field("joining date"; Rec."joining date")
                 {
                     ApplicationArea = All;
                 }
-                field(Gender;Rec.Gender)
+                field(Gender; Rec.Gender)
                 {
                     ApplicationArea = All;
                 }
-                field(age;Rec.age)
+                field(age; Rec.age)
                 {
                     ApplicationArea = All;
                 }
-                field("State Code";Rec."State Code")
+                field("State Code"; Rec."State Code")
                 {
                     ApplicationArea = All;
                 }
-                field(Address;Rec.Address)
+                field(Address; Rec.Address)
                 {
                     ApplicationArea = All;
                 }
-                field("Residential Address";Rec."Residential Address")
+                field("Residential Address"; Rec."Residential Address")
                 {
                     ApplicationArea = all;
 
                 }
-                field(pincode;Rec.pincode)
+                field(pincode; Rec.pincode)
                 {
                     ApplicationArea = All;
                 }
-                field("Phone No";Rec."Phone No")
+                field("Phone No"; Rec."Phone No")
                 {
                     ApplicationArea = All;
                 }
-                
+
             }
         }
         area(Factboxes)
@@ -85,4 +85,7 @@ page 50103 "mypage"
             }
         }
     }
+
+
+
 }

@@ -50,19 +50,16 @@ page 50121 ItemListPage
         }
     }
 
-    actions
-    {
-        area(Processing)
+     actions{
+        area(Creation)
         {
-            action(ActionName)
+            action("new document")
             {
-                ApplicationArea = All;
-
-                trigger OnAction();
-                begin
-
-                end;
+              ApplicationArea = All;
+              RunObject = page "Sales Order";
             }
         }
-    }
+     }
+
+    
 }

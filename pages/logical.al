@@ -46,7 +46,7 @@ page 50125 Logical
                 
                 trigger OnAction()
                 begin
-                    if   (sub1 >50) AND
+                    if   (sub1 > 50) AND
                          (sub2 > 50) AND 
                           (sub3 > 50) then
                           result := 'Pass'

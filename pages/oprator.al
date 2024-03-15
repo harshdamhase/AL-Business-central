@@ -31,7 +31,8 @@ page 50116 Operator
                 {
                     ApplicationArea = All;
                     Caption = 'Sum of Values :';
-
+                ToolTip = 'Here Sum of two values';
+               
                 }
                 field(Substract; Substract)
                 {
@@ -69,11 +70,20 @@ page 50116 Operator
                     Multiply := Value1 * Value2;
                     Divide := Value1 / Value2;
                 end;
+                
+            }
+            action("Navigation")
+            {
+                ApplicationArea = All;
+                RunObject = page "Employee";
             }
 
-        }
-    }
 
+        }
+
+        
+    }
+    
     var
         myInt: Integer;
 
