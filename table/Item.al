@@ -12,12 +12,12 @@ table 50120 ItemTable
         field(2; "Item name"; Text[10])
         {
             DataClassification = ToBeClassified;
-            NotBlank = true;
+            //NotBlank = true;
         }
         field(3; "Item Description"; Text[10])
         {
             DataClassification = ToBeClassified;
-            NotBlank = true;
+           // NotBlank = true;
         }
         field(4; "NLC"; Decimal)
         {
@@ -32,7 +32,7 @@ table 50120 ItemTable
         {
             OptionMembers = "Inventory","Services","Non-Inventory";
             DataClassification = ToBeClassified;
-            NotBlank = true;
+        //    NotBlank = true;
         }
 
         field(7; "Purchasing Code"; code[10])

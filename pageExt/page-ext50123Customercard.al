@@ -28,7 +28,7 @@ pageextension 50123 "Customer card ext" extends "Customer Card"
         Modify("Credit Limit (LCY)")
         {
             ShowMandatory = true;
-         
+
         }
 
     }
@@ -37,7 +37,7 @@ pageextension 50123 "Customer card ext" extends "Customer Card"
 
     begin
         Rec.TestField("Phone No.");
-        Rec.TestField("city");
+
     end;
 
 

@@ -1,24 +1,25 @@
-// codeunit 50105 MyCodeunit
-// {
-//     trigger OnRun()
-//     begin
-//         num1 := 10;
-//         num2 := 20;
-//         add(num1 + num2);
-//     end;
-    
-//     procedure addnum(num1: Integer; num2: Integer)
+codeunit 50105 MyCodeunit
+{
+    trigger OnRun()
+    begin
+        num1 := 10;
+        num2 := 20;
+        addnum(num1, num2);
+    end;
 
-// var tot: Integer;
-// begin 
+    procedure addnum(num1: Integer; num2: Integer)
 
-//     tot := num1 + num2;
-//     Message('sum of two numbers: %1, %2 and %3 is' ,num1,num2,tot);
-// end;
+    var
+        tot: Integer;
+    begin
+
+        tot := num1 + num2;
+        Message('Sum of two numbers: %1, %2 is %3', num1, num2, tot);
+    end;
 
 
+    var
+        num1: Integer;
+        num2: Integer;
+}
 
-//     var
-//         num1: Integer;
-//         num2: Integer;
-// }

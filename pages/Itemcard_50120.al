@@ -37,7 +37,7 @@ page 50120 Itemcard
                 field(Type; Rec.Type)
                 {
                     ApplicationArea = All;
-                    ShowMandatory = true;
+                  //  ShowMandatory = true;
                 }
                 field("Purchasing Code"; Rec."Purchasing Code")
                 {
@@ -86,7 +86,7 @@ page 50120 Itemcard
     {
         area(Processing)
         {
-            action(onclick)
+            action("validate field")
             {
                 ApplicationArea = All;
 
@@ -96,6 +96,7 @@ page 50120 Itemcard
                 end;
             }
         }
+    
         area(creation)
         {
             action("New doc")
@@ -113,6 +114,7 @@ page 50120 Itemcard
                 RunObject = page "Sales Order";
             }
         }
+
 
     }
 

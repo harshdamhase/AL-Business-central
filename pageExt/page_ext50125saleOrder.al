@@ -17,10 +17,7 @@ pageextension 50125 "Sale Order ext" extends "Sales Order"
         //         ApplicationArea = All;
         //     }
         // }
-        Modify("Due Date")
-        {
-            ShowMandatory = true;
-        }
+       
     }
 
 
@@ -34,8 +31,8 @@ pageextension 50125 "Sale Order ext" extends "Sales Order"
     var
 
     begin
-        Rec.TestField(City);
-        Rec.TestField("Sell-to Contact");
+     //   Rec.TestField(City);
+      //  Rec.TestField("Sell-to Contact");
     end;
 
     var

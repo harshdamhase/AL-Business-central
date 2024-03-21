@@ -12,6 +12,10 @@ tableextension 50112 "Customer ext" extends "Customer"
         {
             DataClassification = ToBeClassified;
         }
+        field(300; "Sales person Code"; Code[10])
+        {
+            DataClassification = ToBeClassified;
+        }
 
     }
 
