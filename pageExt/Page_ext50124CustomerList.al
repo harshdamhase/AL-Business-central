@@ -9,12 +9,14 @@ pageextension 50124 "Customer List ext" extends "Customer List"
             {
                 ApplicationArea = All;
             }
-            
+
         }
         modify(Name)
         {
-            ShowMandatory= true;
+            ShowMandatory = true;
         }
+
+
     }
 
     actions
@@ -24,4 +26,4 @@ pageextension 50124 "Customer List ext" extends "Customer List"
 
     var
         myInt: Integer;
-}       
+}

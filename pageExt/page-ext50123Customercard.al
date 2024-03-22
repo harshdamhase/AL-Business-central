@@ -19,6 +19,20 @@ pageextension 50123 "Customer card ext" extends "Customer Card"
                 ApplicationArea = All;
             }
         }
+        addafter("Post Code")
+        {
+            field("Sales person code"; Rec."Sales person Code")
+            {
+                ApplicationArea = All;
+            }
+        }
+        addafter("Phone No.")
+        {
+            field("Customer Id"; Rec."Customer Id")
+            {
+                ApplicationArea = All;
+            }
+        }
         modify("Phone No.")
         {
             ShowMandatory = true;
@@ -29,6 +43,13 @@ pageextension 50123 "Customer card ext" extends "Customer Card"
         {
             ShowMandatory = true;
 
+        }
+        addafter("Customer Id")
+        {
+            field("Open Invoices"; Rec."Open Invoices")
+            {
+                ApplicationArea = All;
+            }
         }
 
     }

@@ -17,6 +17,15 @@ pageextension 50126 "sale order list ext" extends "Sales Order List"
                 ApplicationArea = All;
             }
         }
+       addbefore("Sell-to Post Code")
+       {
+        field("Sales Person Code";Rec."Sales Person Code")
+        {
+            ApplicationArea = All;
+        }
+       }
+
+       
     }
 
     actions

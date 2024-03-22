@@ -10,10 +10,24 @@ tableextension 50113 "sales Header ext" extends "Sales Header"
             DataClassification = ToBeClassified;
 
         }
-        field(38;"City"; Text[10])
+        field(38; "City"; Text[10])
         {
             DataClassification = ToBeClassified;
         }
+        field(39; "Sales Person Code"; Option)
+        {
+            OptionMembers = PUNE,MUMBAI,UI;
+            DataClassification = ToBeClassified;
+        }
+        field(49; "Customer Id"; Code[10])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(42; "Open Invoices"; Code[10])
+        {
+            DataClassification = ToBeClassified;
+        }
+
     }
 
     keys

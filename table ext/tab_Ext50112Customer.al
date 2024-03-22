@@ -12,11 +12,22 @@ tableextension 50112 "Customer ext" extends "Customer"
         {
             DataClassification = ToBeClassified;
         }
-        field(300; "Sales person Code"; Code[10])
+        field(300; "Sales person Code"; Option)
         {
+            OptionMembers = PUNE,GS,MUMBAI;
+            DataClassification = ToBeClassified;
+
+        }
+        field(301; "Customer Id"; Code[10])
+        {
+
             DataClassification = ToBeClassified;
         }
 
+        field(302; "Open Invoices"; Code[10])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
 

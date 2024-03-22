@@ -1,5 +1,24 @@
 codeunit 50105 MyCodeunit
 {
+  [EventSubscriber(ObjectType::Table, Database::"Sales Header", 'OnAfterCopySellToCustomerAddressFieldsFromCustomer', '', false, false)]
+    local procedure CopyCustomFields(SellToCustomer: Record Customer; var SalesHeader: Record "Sales Header")
+    begin
+       SalesHeader."Open Invoices" := SellToCustomer."Open Invoices";
+    end;
+ 
+
+ 
+    [EventSubscriber(ObjectType::Codeunit, CodeUnit::"Sales-Post", 'OnBeforePostSalesDoc', '', false, false)]
+     procedure OnValidateSalesHeader(var SalesHeader: Record "Sales Header")
+     begin
+        If SalesHeader."Open Invoices" = ''
+        then 
+        Error('error open invoice is empty');
+     end;
+    
+
+ 
+
     trigger OnRun()
     begin
         num1 := 10;
