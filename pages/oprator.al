@@ -15,14 +15,14 @@ page 50116 Operator
                 field(Value1; Value1)
                 {
                     ApplicationArea = All;
-                      ShowMandatory = true;
-                      Caption = 'Enter Value1 :';
+                    ShowMandatory = true;
+                    Caption = 'Enter Value1 :';
                 }
                 field(Value2; Value2)
                 {
                     ApplicationArea = All;
                     NotBlank = true;
-                      Caption = 'Enter Value2 :';
+                    Caption = 'Enter Value2 :';
                 }
             }
             Group(Output)
@@ -31,8 +31,8 @@ page 50116 Operator
                 {
                     ApplicationArea = All;
                     Caption = 'Sum of Values :';
-                ToolTip = 'Here Sum of two values';
-               
+                    ToolTip = 'Here Sum of two values';
+
                 }
                 field(Substract; Substract)
                 {
@@ -49,7 +49,7 @@ page 50116 Operator
                     ApplicationArea = All;
                     Caption = 'Dividation';
                 }
-               
+
             }
         }
     }
@@ -70,7 +70,7 @@ page 50116 Operator
                     Multiply := Value1 * Value2;
                     Divide := Value1 / Value2;
                 end;
-                
+
             }
             action("Navigation")
             {
@@ -81,9 +81,9 @@ page 50116 Operator
 
         }
 
-        
+
     }
-    
+
     var
         myInt: Integer;
 
@@ -94,6 +94,6 @@ page 50116 Operator
         Multiply: Integer;
         Divide: Decimal;
 
-       
+
 
 }

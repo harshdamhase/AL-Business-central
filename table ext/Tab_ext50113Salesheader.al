@@ -27,7 +27,7 @@ tableextension 50113 "sales Header ext" extends "Sales Header"
         {
             DataClassification = ToBeClassified;
         }
-
+        
     }
 
     keys
