@@ -10,6 +10,8 @@ pageextension 50127 "purchase order ext" extends "Purchase Order"
                 ApplicationArea = All;
             }
         }
+
+        
     }
 
     actions

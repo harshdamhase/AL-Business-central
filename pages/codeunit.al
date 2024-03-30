@@ -16,8 +16,7 @@ codeunit 50105 MyCodeunit
         Error('error open invoice is empty');
      end;
     
-
- 
+   
 
     trigger OnRun()
     begin
