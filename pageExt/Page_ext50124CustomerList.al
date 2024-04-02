@@ -15,7 +15,7 @@ pageextension 50124 "Customer List ext" extends "Customer List"
         {
             ShowMandatory = true;
         }
-
+       
 
     }
 

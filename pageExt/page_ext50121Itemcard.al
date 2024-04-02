@@ -32,6 +32,7 @@ pageextension 50121 "Item Card Ext" extends "Item Card"
     actions
     {
         // Add changes to page actions here
+       
     }
 
     var

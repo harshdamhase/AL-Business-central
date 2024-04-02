@@ -51,19 +51,13 @@ pageextension 50123 "Customer card ext" extends "Customer Card"
                 ApplicationArea = All;
             }
         }
-
+        
     }
-     trigger OnQueryClosePage(CloseAction: Action): Boolean
-     var
+    trigger OnQueryClosePage(CloseAction: Action): Boolean
+    var
 
-     begin
-         // Rec.Testfield("Post Code");
-        //  if Rec."Post Code" = ''
-        //  then
-        //   Error('error post code is empty');
-        //  if Rec."Post Code" > '0-6'
-        //  then
-        //  Error('error postcode contain only 6 digit')
-     end;
+    begin
+        // Rec.Testfield("Post Code");
+    end;
 
 }

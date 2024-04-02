@@ -10,13 +10,21 @@ pageextension 50127 "purchase order ext" extends "Purchase Order"
                 ApplicationArea = All;
             }
         }
-
+        modify("Pay-to Address")
+        {
+            trigger OnAfterValidate()
+            
+            begin
+                If(Rec."Pay-to Address" = Rec."Pay-to Address 2") then
+                error('address is same not address1');
+            end;
+        }
         
     }
 
     actions
     {
-        // Add changes to page actions here
+       
     }
 
     var

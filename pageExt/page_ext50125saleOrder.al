@@ -33,9 +33,26 @@ pageextension 50125 "Sale Order ext" extends "Sales Order"
                 ShowMandatory = true;
             }
         }
-    
+        addafter("Sales Person Code")
+        {
+            field(sp; Rec.sp)
+            {
+                ApplicationArea = All;
 
-    
+                // TableRelation = "Salesperson/Purchaser".Code WHERE("sp" = CONST(sales));
+            }
+
+
+        }
+        addafter(sp)
+        {
+            field(address; Rec.address)
+            {
+                ApplicationArea = All;
+            }
+        }
+
+
     }
 
     actions
@@ -48,8 +65,8 @@ pageextension 50125 "Sale Order ext" extends "Sales Order"
     var
 
     begin
-          Rec.TestField("Open Invoices");
-        
+        Rec.TestField("Open Invoices");
+
     end;
 
     var

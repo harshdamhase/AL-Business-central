@@ -1,15 +1,7 @@
 pageextension 50129 "Item List ext" extends "Item List"
 {
-   /* layout
+    layout
     {
-        // Add changes to page layout here
-        addafter(InventoryField)
-        {
-            field("NLC"; Rec.NLC)
-            {
-              ApplicationArea = All;
-            }
-        }
         addafter("No.")
         {
             field("Name of Item"; Rec."Name of Item")
@@ -19,42 +11,54 @@ pageextension 50129 "Item List ext" extends "Item List"
         }
         addbefore("Routing No.")
         {
-            field("MOP";Rec.MOP)
+            field("MOP"; Rec.MOP)
             {
                 ApplicationArea = All;
             }
         }
-        
-    }
-    
-    */
-        
-    actions
-    {
-        // Add changes to page actions here
-        addfirst(processing)
-        {
-            action("Setfilter")
-            {
-                ApplicationArea = All;
-                Caption = 'Set filter';
-                Promoted = true;
-                PromotedCategory = process;
-               PromotedIsBig = true;
 
-          trigger OnAction()
-          
-          begin
-          //  Rec.SetFilter("No.",'1000');
-            Rec.SetRange("No.",'1000','1200');
-          end;
-            }
-        }
-    
+
+        /* modify(InventoryField)
+         {
+             ApplicationArea = All;
+             Caption = 'Inventory';
+
+             trigger OnBeforeValidate()
+             begin
+                 if Rec.Inventory <> 0 then begin
+                     //Visible := false;
+                     Hide(); 
+                     Error('show error');
+                 end;
+             end;
+         }
+         */
     }
+
+
+
+        // Add changes to page actions here
+        // addfirst(processing)
+        // {
+        //     action("Setfilter")
+        //     {
+        //         ApplicationArea = All;
+        //         Caption = 'Set filter';
+        //         Promoted = true;
+        //         PromotedCategory = process;
+        //         PromotedIsBig = true;
+
+
+
+        //  Rec.SetFilter(Inventory,'0');
+        //  Rec.SetRange("No.",'1000','1200');
+
+
+trigger OnOpenPage()
     
-    var
-        myInt: Integer;
+    begin
+           Rec.SetFilter(Inventory,'>0');
+    end;
 }
 
 
@@ -69,4 +73,7 @@ pageextension 50129 "Item List ext" extends "Item List"
 
 
 
-    
+
+
+
+
