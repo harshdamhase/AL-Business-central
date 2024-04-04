@@ -77,9 +77,7 @@ page 50116 Operator
                 ApplicationArea = All;
                 RunObject = page "Employee";
             }
-
-
-        }
+ }
 
 
     }
