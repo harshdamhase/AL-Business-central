@@ -13,7 +13,7 @@ page 50115 "SaleOrder Page"
             {
                 field("Customer Name";Rec."Customer Name")
                 {
-                    ApplicationArea = All;
+               ApplicationArea = All;
                     
                 }
                 field("Customer Code"; Rec."Customer Code")

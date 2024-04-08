@@ -31,11 +31,10 @@ tableextension 50113 "sales Header ext" extends "Sales Header"
         {
             DataClassification = ToBeClassified;
             TableRelation = "Salesperson/Purchaser".Code WHERE("sp" = CONST(sales));
-
         }
         field(612; "address"; Text[10])
         {
-        
+
             DataClassification = ToBeClassified;
             TableRelation = "Salesperson/Purchaser".Code WHERE("address" = const(mumbai));
         }
